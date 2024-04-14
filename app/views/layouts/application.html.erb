@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Janken</title>
+    <title><%= @document_title %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>じゃんけんゲーム</header>
+    <main><%= yield %></main>
+    <footer>Powered by Ruby on Rails</footer>
   </body>
 </html>
